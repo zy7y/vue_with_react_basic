@@ -61,7 +61,7 @@ watchEffect(() => {
 const btnRef = ref();
 
 const printRefValue = () => {
-  console.log(btnRef?.value);
+  console.log(btnRef?.value, btnRef);
 };
 </script>
 

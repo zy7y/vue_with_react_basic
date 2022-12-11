@@ -1,10 +1,10 @@
 <script setup>
 import { ref, reactive } from "vue";
 
-// 单个数据
+// 单个数据 count.value   count
 const count = ref(0);
 
-// 对象
+// 对象 info.age info.age
 const info = reactive({
   name: "777",
   age: 18,
@@ -40,7 +40,7 @@ const changeCount = (v) => {
     <!-- 不使用 v-model实现 -->
     <input :value="count" @input="(event) => (count = event.target.value)" />
 
-    <!-- 事件 -->
+    <!-- 事件 v-on:click-->
     <button @click="changeAge">改变age</button>
     <button @click="changeCount(23)">count 改成23</button>
   </div>

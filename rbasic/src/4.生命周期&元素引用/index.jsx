@@ -54,6 +54,7 @@ export default () => {
 
   const printRefValue = () => {
     console.log(btnRef.current);
+    console.log(btnRef);
   };
   return (
     <div>
